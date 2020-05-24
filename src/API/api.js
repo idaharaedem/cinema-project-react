@@ -46,8 +46,6 @@ export const MovieSelected = async(movieId) => {
 
 export const UpcomingApi = async() => {
 
-    const key = 'cd8cd9d5479177d9e34d62b9ff73ea09';
-
     try {
         const res = await axios(`https://api.themoviedb.org/3/movie/upcoming?api_key=${key}&language=en-US&page=1`);
         const upcomingMovies = res.data.results;
@@ -57,6 +55,36 @@ export const UpcomingApi = async() => {
        console.log(error); 
     }
 }
+
+export const GetTrending = async() => {
+    
+    try {
+        const res = await axios(`https://api.themoviedb.org/3/trending/movie/day?api_key=${key}`);
+         const getTrending = res.data.results;
+         return getTrending;
+         
+    }
+
+    catch (error) {
+        alert(error);
+    }
+
+}
+
+export const GetTopRated = async() => {
+
+    try {
+        const res = await axios(`https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`);
+         const topRated = res.data.results;
+         return topRated;
+        
+    } 
+    catch(error) {
+        console.log(error);
+    }
+}
+
+
 
 export const GetSimilar = async() => {
 

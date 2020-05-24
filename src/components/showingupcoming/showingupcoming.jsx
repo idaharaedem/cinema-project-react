@@ -21,7 +21,6 @@ const ShowingUpcoming = () => {
     useEffect(()=> {
         const fetchData = async() => {
             const data = await NowShowing();
-            console.log(data);
             setShowing(data);
         }
         fetchData();
@@ -30,7 +29,6 @@ const ShowingUpcoming = () => {
     useEffect(() => {
         const fetchData = async() => {
             const data = await UpcomingApi();
-            console.log(data);
             setUpcoming(data);
         }
 
@@ -69,15 +67,15 @@ const ShowingUpcoming = () => {
                 </div>
             </div> 
 
-            <hr class="hr-2"/>
-            <hr class="hr-1"/>
+            <hr className="hr-2"/>
+            <hr className="hr-1"/>
 
-            <div class="row upcoming-header">
+            <div className="row upcoming-header">
                 <h3> Upcoming </h3>
             </div> 
 
-            <div class="upcoming-slider">
-                <div class="upcoming-wrapper">
+            <div className="upcoming-slider">
+                <div className="upcoming-wrapper">
                 <Slider {...properties}>
                             {
                                 upcoming.map((movie)=> <Link to={`/moviedetails/${movie.id}`}><Upcoming 

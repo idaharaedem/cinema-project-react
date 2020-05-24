@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav,Carousels, ShowingUpcoming} from '../../components'
+import {Nav,Carousels, ShowingUpcoming, Trending, TopRated} from '../../components'
 import {Route} from 'react-router-dom';
 
 const Homepage = () => {
@@ -8,6 +8,8 @@ const Homepage = () => {
              <Nav/>
              <Carousels/>
              <ShowingUpcoming/>
+             <Trending/>
+             <TopRated/>
         </div>
        
         

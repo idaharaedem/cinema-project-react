@@ -4,10 +4,10 @@ import {wordLimit} from '../base';
 import './upcoming-item.styles.scss';
 
 const Upcoming = ({upcoming}) => (
-    <div class="upcoming-poster">
+    <div className="upcoming-poster">
         <img src={`http://image.tmdb.org/t/p/original/${upcoming.poster_path}`}/>
-        <div class="upcoming-rating"> ${upcoming.vote_average} <i class="ion-ios-star-outline"></i> </div>
-        <div class="upcoming-title"> ${wordLimit(upcoming.title)} </div>
+        <div className="upcoming-rating"> {upcoming.vote_average} <i class="ion-ios-star-outline"></i> </div>
+        <div className="upcoming-title"> {wordLimit(upcoming.title)} </div>
     </div>
 )
 
