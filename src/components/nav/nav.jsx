@@ -1,5 +1,6 @@
 import React from 'react';
 import cinema from '../../img/cinema-logo.png';
+import {Link} from 'react-router-dom';
 
 import './nav.styles.scss';
 
@@ -7,7 +8,7 @@ const Nav = () => {
 return(
     <div className="row">
         <nav>
-            <img className="cinema-logo" src={cinema}  />
+            <Link to="/"><img className="cinema-logo" src={cinema}  /></Link>
 
             <form className="search">
                 <input className="search_field" type="text" placeholder="Search Movies"/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav,Carousels, ShowingUpcoming, Trending, TopRated} from '../../components'
+import {Nav,Carousels, ShowingUpcoming, Trending, TopRated, Footer} from '../../components'
 import {Route} from 'react-router-dom';
 
 const Homepage = () => {
@@ -10,6 +10,7 @@ const Homepage = () => {
              <ShowingUpcoming/>
              <Trending/>
              <TopRated/>
+             <Footer/>
         </div>
        
         
