@@ -1,0 +1,61 @@
+.section-now-showing{
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 20px 60px 25px rgba(0,0,0,.8);
+    background: linear-gradient(-90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%),
+    linear-gradient(90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%);
+}
+
+
+
+.section-now-showing h3 {
+    left: 120px;
+    margin: 0px auto;
+    position: absolute;
+    top: 2%;
+
+}
+.section-now-showing h2{
+    top: 0;
+
+}
+
+.ns-poster-wrapper{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.upcoming-header{
+    display: inline-block;
+    position: absolute;
+ }
+ .upcoming-wrapper{
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+
+ .hr-1{
+    position: absolute;
+    display: inline-block;
+    border: 1px solid rgb(110, 110, 110);
+    margin: 0 auto;
+    width: 35%;
+    top:485px;
+    left: 380px;
+    background: linear-gradient(-90deg, rgba(19, 8, 8, 0) 50%, rgb(22, 22, 22,1) 100%),
+    linear-gradient(90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%);
+}
+
+.hr-2{
+    position: absolute;
+    display: inline-block;
+    border: 1px solid rgb(110, 110, 110);
+    margin: 0 auto;
+    width: 65%;
+    top:440px;
+    left: 380px;
+    background: linear-gradient(-90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%),
+    linear-gradient(90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%);
+}
+ 
+

@@ -1,0 +1,56 @@
+
+.myslides{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slideshow-img {
+    
+    max-width: 1000%!important;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    flex: 0 1 20%;
+    height: 670px;
+    width: 1350px;
+    box-shadow: 0 5px 23px rgba(0,0,0,.9);
+    border-radius: 1%;
+    transform: 2s ease-in-out;
+    animation: smooth 4s;
+    
+
+}
+
+.slideshow-container p {
+    position: absolute;
+    top: 397px;
+    left: 100px;
+    z-index: 1000;
+}
+
+.caption-text {
+    color: #fff;
+    font-size: 120%;
+    position: absolute;
+    top: 428px;
+    left: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 1000;
+
+}
+
+
+.rating-carousel {
+    color: #fff;
+    padding: 6px 7px;
+    border-radius: 4px;
+    font-size:80%;
+    position: absolute;
+    background-color:#f37300;
+    top: 475px;
+    left: 100px;
+    z-index: 1000;
+   
+}
