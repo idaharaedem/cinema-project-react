@@ -22,14 +22,16 @@ console.log(searchedItem)
 return  (
     <section className="search-section">
         <div className="search-header row">
-            <h3> Movies </h3>
+            <h3> Searched Movies </h3>
         </div> 
 
         <div className="row search-container">
             
-                {
+                {   
                     search.map((movie=> 
-                    <Link to={`/moviedetails/${movie.id}`}><SearchItem search={movie} /></Link>))
+                    movie.poster_path ?
+                    <Link to={`/moviedetails/${movie.id}`}><SearchItem search={movie} /></Link> : '')
+                    )
                 }
 
         </div>

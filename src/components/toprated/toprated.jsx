@@ -27,12 +27,11 @@ const TopRated = () => {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 6,
-       
       };
 
-
+      
     return(
-        <section class="section-topRated"> 
+        <section class="section-topRated" id="toprated"> 
             <div class="row">
                     <h3> Top Rated </h3>
                 </div>

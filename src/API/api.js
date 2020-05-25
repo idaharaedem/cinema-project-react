@@ -108,6 +108,7 @@ export const GetSimilar = async(movieId) => {
         const res = results
         return res;
         }
+        
         catch (error) {
             console.log(error)
         }

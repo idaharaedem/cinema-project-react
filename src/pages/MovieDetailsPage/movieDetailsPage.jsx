@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom';
 import Nav from '../../components/nav/nav'
 import MovieDetails from '../../components/movieDetails/movieDetails';
 import SimilarMovie from '../../components/similarmovies/similarmovie';
+import Footer from '../../components/footer/footer';
 
 
 const MovieDetailsPage =({history,match}) => {
@@ -14,6 +15,7 @@ const MovieDetailsPage =({history,match}) => {
             <Nav/>
             <MovieDetails match={match}/>
             <SimilarMovie history={history} match={match}/>
+            <Footer/>
         </div>
     )
 }

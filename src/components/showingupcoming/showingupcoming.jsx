@@ -4,6 +4,7 @@ import ShowingItem from '../showing-item/showing-item';
 import Upcoming from '../upcoming-item/upcoming-item';
 import Slider from 'react-slick';
 
+
 import {Link} from 'react-router-dom';
 
 import "slick-carousel/slick/slick.css"; 
@@ -46,7 +47,7 @@ const ShowingUpcoming = () => {
       };
     
     return(
-        <section className="section-now-showing" id="ns">
+        <section className="section-now-showing" id="nowshowing">
              <div className="heading">
                  <h3> Now Showing. </h3>
                  
@@ -57,12 +58,13 @@ const ShowingUpcoming = () => {
                             
                             <Slider {...properties}>
                             {
+                               
                                 showing.map((movie)=> <Link to={`/moviedetails/${movie.id}`}><ShowingItem 
                                     key = {movie.id} 
                                     ns = {movie}/></Link>)
                             }
                             </Slider> 
-                            
+
                         </div>
                 </div>
             </div> 

@@ -1,10 +1,11 @@
 import React from 'react';
-import {Route, Switch, Router} from 'react-router-dom';
+import {Route, Switch,} from 'react-router-dom';
+
 
 import MovieDetailsPage from '../src/pages/MovieDetailsPage/movieDetailsPage'
-import MovieDetails from './components/movieDetails/movieDetails'
 import HomePage from '../src/pages/Homepage/homepage'
 import SearchPage from './pages/Searchpage/searchpage'
+
 
 import './App.css';
 

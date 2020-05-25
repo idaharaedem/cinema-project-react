@@ -35,8 +35,10 @@ const MovieDetails = ({match: {params}}) => {
             
             <div className="details-desc">
                     {
-                       
+                        selected.videos.results.length > 0 ?
                         <MovieDetailsImage selected={selected}/>
+                        :
+                        ''
                     }
   
             </div>

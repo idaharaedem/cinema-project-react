@@ -1,6 +1,8 @@
 import React from 'react';
 import cinema from '../../img/cinema-logo.png';
 import {Link, withRouter} from 'react-router-dom';
+import {Link as Scroll} from 'react-scroll'
+
 
 
 import './nav.styles.scss';
@@ -28,6 +30,8 @@ return(
     <div className="row">
         <nav>
             <Link to="/"><img className="cinema-logo" src={cinema}  /></Link>
+            
+               
 
             <form onSubmit={handleSubmit} className="search">
                 <input onChange={handleChange}  className="search_field" name="search" type="text" placeholder="Search Movies"/>
