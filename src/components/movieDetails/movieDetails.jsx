@@ -30,7 +30,7 @@ const MovieDetails = ({match: {params}}) => {
         <section className="section-movieDetails">
             <div className="details-img">
                 {
-                    <img src={`http://image.tmdb.org/t/p/w780/${selected.backdrop_path}`} alt="Movie selected backdrop"/>
+                    <img src={`https://image.tmdb.org/t/p/w780/${selected.backdrop_path}`} alt="Movie selected backdrop"/>
                 }
             </div>
 
