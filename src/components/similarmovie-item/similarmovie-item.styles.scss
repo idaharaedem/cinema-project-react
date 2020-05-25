@@ -1,0 +1,68 @@
+.sm-poster {
+    position: relative;
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 45px;
+    padding: 0%;
+    transform: scale(1);
+    opacity: 0.8;
+}
+
+.sm-poster:hover{
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.2s;
+    opacity: 1;
+}
+
+
+.sm-poster img {
+    height: 180px;
+    width: 120px;
+    background-color: #000;
+    box-shadow: 0 5px 70px 5px rgba(0, 0, 0, 0.8);
+    
+}
+
+
+.sm-rating {
+    color: #fff;
+    padding: 3px 3px;
+    background-color: #000;
+    font-size: 70%;
+    border-radius: 1%;
+    position: absolute;
+    top: 0px;
+   
+}
+
+.sm-rating:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.sm-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 200;
+}
+
+.sm-date{
+    color: #fff;
+    text-align: center;
+}
+
+.sm-arrows-back{
+    position: absolute;
+    top: 630px;
+    left:50px;
+}
+
+.sm-arrows-forward{
+    position: absolute;
+    top: 630px;
+    right: 50px;
+    
+}

@@ -1,6 +1,7 @@
 import React, {useState, useEffect}from 'react';
-import {GetSimilar, MovieSelected} from '../../API/api';
+import { MovieSelected} from '../../API/api';
 import MovieDetailsImage from '../moviedetails-desc/moviedetails-image';
+
 
 
 import './movieDetails.styles.scss';
@@ -8,6 +9,7 @@ import './movieDetails.styles.scss';
 const MovieDetails = ({match: {params}}) => {
     
     const [selected,setSelected] = useState([]);
+    
 
     useEffect(()=> {
         const fetchSelected = async() => {
@@ -16,7 +18,9 @@ const MovieDetails = ({match: {params}}) => {
         }
 
         fetchSelected();
-    }, [])
+    }, []);
+
+   
     
     if(selected.videos == null) return null;
 
@@ -28,7 +32,7 @@ const MovieDetails = ({match: {params}}) => {
                 }
             </div>
 
-            {
+            
             <div className="details-desc">
                     {
                        
@@ -36,8 +40,11 @@ const MovieDetails = ({match: {params}}) => {
                     }
   
             </div>
-}
         </section>
+
+        
+
+
 
     )
 }

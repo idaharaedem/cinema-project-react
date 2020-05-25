@@ -15,7 +15,7 @@ const MovieDetailsImage = ({selected}) => {
             <div className="details-overview"> 
                 {selected.overview}
             </div>
-            <div class="details-genres"> Movie Genre  <h4> {selected.genres[0].name}</h4> </div>
+            <div className="details-genres"> Movie Genre  <h4> {selected.genres[0].name}</h4> </div>
             <div className="details-rating"> Rating: <h4> {selected.vote_average} </h4></div>
             <div className="details-release"> Release Date  <h4>{selected.release_date}: {selected.status} </h4> </div>
             <div className="details-runtime"> Movie Runtime  <h4> {selected.runtime}: Minutes </h4> </div>

@@ -1,16 +1,19 @@
 import React from 'react';
 import './movieDetailsPage.styles.scss';
 import {Route} from 'react-router-dom';
-import MovieDetails from '../../components/movieDetails/movieDetails';
 import Nav from '../../components/nav/nav'
+import MovieDetails from '../../components/movieDetails/movieDetails';
+import SimilarMovie from '../../components/similarmovies/similarmovie';
 
-const MovieDetailsPage =({match}) => {
+
+const MovieDetailsPage =({history,match}) => {
     
     
     return(
         <div>
             <Nav/>
             <MovieDetails match={match}/>
+            <SimilarMovie history={history} match={match}/>
         </div>
     )
 }

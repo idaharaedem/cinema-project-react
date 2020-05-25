@@ -1,0 +1,29 @@
+.section-similarMovies {
+    background-color: rgb(32, 32, 32);
+    position: relative;
+    box-shadow: 0 20px 60px 25px rgba(0,0,0,.8);
+    background: linear-gradient(-90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%),
+    linear-gradient(90deg, rgba(22, 22, 22, 0) 50%, rgb(22, 22, 22,1) 100%);
+    padding: 0;
+    background-blend-mode: multiply;
+}
+
+.sm-header{
+    display: inline-block;
+    left: 120px;
+    margin-top: 0x;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    z-index: 1;
+    top: 7%;
+ }
+ 
+ .sm-slider {
+     margin-top: 50px;
+     margin-bottom: 0;
+     justify-content: center;
+     align-items: center;
+   
+ }

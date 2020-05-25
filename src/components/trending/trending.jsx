@@ -11,7 +11,6 @@ const Trending = () => {
     useEffect(()=> {
         const fetchData = async() => {
             const data = await GetTrending();
-            console.log(data);
             setTrending(data);
         }
 

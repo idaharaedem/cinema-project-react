@@ -86,15 +86,30 @@ export const GetTopRated = async() => {
 
 
 
-export const GetSimilar = async() => {
+export const GetSimilar = async(movieId) => {
 
-   /*  try {
+     try {
         const movie = await axios(`https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=${key}&language=en-US&page=1`);
         const similar = movie.data.results;
-        return similar
+        return similar;
         
     }
     catch(error){
         alert(error);
-    } */
+    } 
 }
+
+
+
+    export const GetSearch = async(query) => {
+    
+        try {
+        const {data:{results}} = await axios(`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=${query}&page=1&include_adult=false`);
+        const res = results
+        return res;
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
+    

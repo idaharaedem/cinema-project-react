@@ -15,7 +15,6 @@ const TopRated = () => {
     useEffect(()=> {
         const fetchData = async() => {
             const data = await GetTopRated();
-            console.log(data);
             setTopRated(data);
         }
 
@@ -31,6 +30,7 @@ const TopRated = () => {
        
       };
 
+
     return(
         <section class="section-topRated"> 
             <div class="row">
@@ -39,7 +39,7 @@ const TopRated = () => {
             <div class="topRated-wrapper">
                 <Slider {...properties}>
                     {
-                        topRated.map((movie)=> <Link to={`/moviedetails/${movie.id}`}><TopRatedItem movie={movie}/></Link> )
+                        topRated.map((movie)=> <Link to={`/moviedetails/${movie.id}`}><TopRatedItem  movie={movie}/></Link> )
                     }
                 </Slider>
             </div>

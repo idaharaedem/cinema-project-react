@@ -4,6 +4,7 @@ import {Route, Switch, Router} from 'react-router-dom';
 import MovieDetailsPage from '../src/pages/MovieDetailsPage/movieDetailsPage'
 import MovieDetails from './components/movieDetails/movieDetails'
 import HomePage from '../src/pages/Homepage/homepage'
+import SearchPage from './pages/Searchpage/searchpage'
 
 import './App.css';
 
@@ -15,6 +16,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/moviedetails/:id" component={MovieDetailsPage}/>
+          <Route exact path="/search/:name" component={SearchPage} />
        </Switch>
       </div>
     );
