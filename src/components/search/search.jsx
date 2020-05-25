@@ -6,8 +6,8 @@ import {Link} from 'react-router-dom';
 
 const Search = () => {
 
-const searchedItem = window.localStorage.getItem('search');
-console.log(searchedItem)
+    const searchedItem = window.localStorage.getItem('search');
+
 
     const [search, setSearched] = useState([]);
 

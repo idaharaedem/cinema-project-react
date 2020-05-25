@@ -7,13 +7,15 @@ import MovieDetailsImage from '../moviedetails-desc/moviedetails-image';
 import './movieDetails.styles.scss';
 
 const MovieDetails = ({match: {params}}) => {
-    
+    window.localStorage.setItem('id', params.id);
+    const store = window.localStorage.getItem('id');
+
     const [selected,setSelected] = useState([]);
     
 
     useEffect(()=> {
         const fetchSelected = async() => {
-            const data = await MovieSelected(params.id);
+            const data = await MovieSelected(store);
             setSelected(data);
         }
 

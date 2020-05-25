@@ -45,6 +45,10 @@ const ShowingUpcoming = () => {
         slidesToScroll: 6,
        
       };
+
+      const Click = () => {
+       console.log('click');
+      }
     
     return(
         <section className="section-now-showing" id="nowshowing">
@@ -61,7 +65,9 @@ const ShowingUpcoming = () => {
                                
                                 showing.map((movie)=> <Link to={`/moviedetails/${movie.id}`}><ShowingItem 
                                     key = {movie.id} 
-                                    ns = {movie}/></Link>)
+                                    ns = {movie}/></Link>
+                                    )
+                                   
                             }
                             </Slider> 
 

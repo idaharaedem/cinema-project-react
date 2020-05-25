@@ -22,12 +22,12 @@ const MovieDetailsImage = ({selected}) => {
             
             
             <div className="details-poster"> 
-                <img src={`http://image.tmdb.org/t/p/original/${selected.poster_path}`}/>
+                <img src={`https://image.tmdb.org/t/p/original/${selected.poster_path}`}/>
             </div>
             
             <div className="trailer">
                {
-                <a href={`https://www.youtube.com/watch?v=${selected.videos.results[0].key}`} target="_blank"> <IoIosPlay  color="#ffa04b" className="ion-play"/> </a>
+                <a href={`https://youtube.com/watch?v=${selected.videos.results[0].key}`} target="_blank"> <IoIosPlay  color="#ffa04b" className="ion-play"/> </a>
                }
             </div> 
         </div>
